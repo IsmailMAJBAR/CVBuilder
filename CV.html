@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CVIsmail</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/myScript.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.2.621/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.2.621/js/jszip.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.2.621/js/kendo.all.min.js"></script>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/CVCSS.css">
+</head>
+
+<body id="theBody">
+    <div class="row justify-content-center">
+        <a class="btn btn-lg btn-primary " id="btnCmd">make My IMG</a>
+        <div class="bgcolW pl-4"> Open with a server to make IMG</div>
+    </div>
+    <div class="page" id="page">
+        <div id="left">
+            <div class="divImg">
+                <img id="imgProfile" src="img/me.jpg" alt="Avatar">
+            </div>
+            <div class="divTitle2">
+                <div>Ismail MAJBAR</div>
+            </div>
+            <div class="divCoordinate">
+                <div class="container">
+                    <div class="row justify-content-start pl-4">
+                        <img id="ResizeIcon" src="img/heart-solid-24.png" />
+                        &nbsp;&nbsp;
+                        <div>25 ans</div>
+                    </div>
+                    <div class="row justify-content-start pl-4">
+                        <img id="ResizeIcon" src="img/phone-call-solid-24.png" />
+                        &nbsp;&nbsp;
+                        <div>+33626409123</div>
+                    </div>
+                    <div class="row justify-content-start pl-4">
+                        <img id="ResizeIcon" src="img/mail-send-regular-24.png" />
+                        &nbsp;&nbsp;
+                        <div>majbarismail@gmail.com</div>
+                    </div>
+                    <div class="row justify-content-start pl-4">
+                        <img id="ResizeIcon" src="img/github-logo-24.png" />
+                        &nbsp;&nbsp;
+                        <a class="removeLinkApparence" style="color: black;" href="https://github.com/IsmailMAJBAR">
+                            <span>github/IsmailMAJBAR</span>
+                        </a>
+                    </div>
+                    <div class="row justify-content-start pl-4">
+                        <img id="ResizeIcon" src="img/linkedin-square-24.png" />
+                        &nbsp;&nbsp;
+                        <a class="removeLinkApparence" style="color: black;"
+                            href="https://www.linkedin.com/in/ismail-majbar-891991193/">
+                            <span>linkedin/ismail-majbar</span>
+                        </a>
+                    </div>
+                    <div class="row justify-content-start pl-4">
+                        <img id="ResizeIcon" src="img/car-solid-24.png" />
+                        &nbsp;&nbsp;
+                        <div>Permis B</div>
+                    </div>
+                </div>
+            </div>
+            <div class="divTitle2">
+                <div>Profile</div>
+            </div>
+            <div class="divContentOfTitle">
+                <div class="container">
+                    <div class="row justify-content-start p-4">
+                        <p id="profileText">
+                            Passionné par le monde de la 3D, de la programmation et de la création de jeux
+                            avec UE4 et Unity
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="divTitle">
+                <div>Langues</div>
+            </div>
+            <div class="divContentOfTitle">
+                <div class="container">
+                    <div class="row justify-content-start pl-4">
+                        <img id="ResizeIcon" src="img/en.svg" />
+                        &nbsp;&nbsp;
+                        <div> En : TOEIC 835 points</div>
+                    </div>
+                    <div class="row justify-content-start pl-4">
+                        <img id="ResizeIcon" src="img/fr.svg" />
+                        &nbsp;&nbsp;
+                        <div> FR : TCF B2 475 points</div>
+                    </div>
+                    <div class="row justify-content-start pl-4">
+                        <img id="ResizeIcon" src="img/jp-square.png" />
+                        &nbsp;&nbsp;
+                        <div> Jp : JLPT Niveau 5</div>
+                    </div>
+                    <div class="row justify-content-start pl-4">
+                        <img id="ResizeIcon" src="img/ar.svg" />
+                        &nbsp;&nbsp;
+                        <div> Ar : Langue maternelle</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="right">
+            <div class="divTitle">
+                <div>Experiences</div>
+            </div>
+            <div class="divContentOfExperience">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col order-first year">2020</div>
+
+                        <p class="col-md-10 order-last textYear">Stage (6 mois), développement web, VueJS, Vuex,
+                            Nuxt,
+                            Troov-France.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col order-first year">2016</div>
+
+                        <p class="col-md-10 order-last textYear">Stage (2 mois), création d'un site web dynamique
+                            Html
+                            Css Php mySQL, Faculté
+                            des
+                            Science-MAROC.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col order-first year">2015</div>
+
+                        <p class="col-md-10 order-last textYear">Stage (2 mois), étude et mise en place des
+                            protocoles
+                            de redondances,
+                            Dimension DATA – MAROC.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col order-first year">2014</div>
+
+                        <p class="col-md-10 order-last textYear">Stage d'initiation (1 mois), Faculté des
+                            Sciences-MAROC
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divTitle">
+                <div>Formations</div>
+            </div>
+            <div class="divContentOfFormation">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col order-first year">2020</div>
+                        <p class="col-md-10 order-last textYear">Master 2 informatique, parcours AIDN (Applications
+                            Interactives et Données
+                            Numériques),UBS-Vannes.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col order-first year">2018</div>
+                        <p class="col-md-10 order-last textYear">Licence 3 fondamentale, sciences et technologies
+                            mathématiques, informatiques
+                            et statistiques,
+                            Options : Informatique, UBS-Vannes.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col order-first year">2016</div>
+                        <p class="col-md-10 order-last textYear">3ème année cycle d’ingénieur en systèmes
+                            informatiques,
+                            IGA – MAROC.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col order-first year">2015</div>
+                        <p class="col-md-10 order-last textYear">DUT (Diplôme Universitaire de Technologie), Option :
+                            Réseau et
+                            Télécommunication, EST-MAROC.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col order-first year">2013</div>
+                        <p class="col-md-10 order-last textYear">Licence 1 fondamentale, sciences de la matière
+                            physique, Faculté des
+                            sciences-MAROC.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col order-first year">2012</div>
+                        <p class="col-md-10 order-last textYear">Baccalauréat STE (Sciences et Technologies
+                            Electriques), MAROC.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="divTitle">
+                <div>Competances</div>
+            </div>
+            <div class="divContentOfskill">
+                <div class="container p-4">
+                    <div class="row pr-4">
+                        <div class="col">
+                            <div class="row">C</div>
+                            <div class="row">C++</div>
+                            <div class="row">C#</div>
+                            <div class="row">PYTHON</div>
+                            <div class="row">SQL/NoSQL</div>
+                        </div>
+                        <div class="col">
+                            <div class="row">JAVASCRIPT</div>
+                            <div class="row">HTML/CSS</div>
+                            <div class="row">NODEJS</div>
+                            <div class="row">JQUERY/AJAX</div>
+                            <div class="row">VueJS</div>
+                        </div>
+                        <div class="col">
+                            <div class="row">LINUX</div>
+                            <div class="row">WINDOWS</div>
+                            <div class="row">MAC OS</div>
+                        </div>
+                        <div class="col">
+                            <div class="row">VSCODE</div>
+                            <div class="row">UNITY</div>
+                            <div class="row">UNREALENGINE</div>
+                            <div class="row">OpenGL</div>
+                            <div class="row">Qt</div>
+                            <div class="row">Virtual Box</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
